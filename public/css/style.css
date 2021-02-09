@@ -1,0 +1,2018 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+	letter-spacing: 0.1px;
+	color: #333333;
+	list-style-type: none;
+}
+ body::-webkit-scrollbar {
+ display: none;
+}
+
+/*X-Small devices (portrait phones, less than 576px)*/
+/*No media query for `xs` since this is the default in Bootstrap*/
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+.indexContainer {
+	height: 525px;
+}
+#smallMenu {
+	display: block;
+	position: absolute;
+	left: 15%;
+}
+#indexNav, #workNav, #recordNav, #contactNav, .registerArea {
+	display: none;
+}
+#signIn {
+	position: absolute;
+	right: 15%;
+}
+.description {
+	width: 80%;
+	height:400px;
+	position: absolute;
+	left: 0;
+	top: 15%;
+	right: 0;
+	bottom: 0;
+	margin:0 auto;
+	z-index: 1;
+	text-align: center;
+}
+.heading{
+	font-size: 32px;
+}
+.lead{
+	font-size: 14px;
+}
+.uploadBtn{
+	margin-top:10%
+}
+.tutorialContainer {
+	width: 350px;
+	margin: 0 auto;
+}
+.tutorialText {
+	width: 335px;
+	margin-top:10%;
+	margin: 0 auto;
+	padding: 20px;
+}
+#tImg1, #tImg2, #tImg3 {
+	width: 350px;
+	height: 262.5px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+.bottomHr {
+	width: 80%;
+	margin: 0 auto;
+}
+.tabBarContainer {
+	width: 100%;
+	margin-top: 5%;
+}
+.tabBar {
+	text-align: center;
+	background: #f4f4f4;
+	padding: 5%;
+}
+.tBIContainer {
+	margin-top: 3%;
+	margin-bottom: 1%;
+}
+.tabBarIcon {
+	width: 24px;
+	height: 24px;
+	margin-left: 1%;
+}
+.rightState{
+	margin: 3% 0 0;
+}
+
+/*-----------------------以上首页576-----------------------------*/
+
+.funIntro {
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 15%;
+}
+.nav-masthead .nav-link + .nav-link {
+	margin-left: 3.5rem;
+}
+.formArea {
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+#audioFile,#musicScore{
+	margin-top:20%;
+}
+.createArea {
+	width: 160px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top:15%;
+	margin-bottom: 5%;
+}
+/*-------------------------------------上传作品页576以下-------------------------------------*/
+.searchBlock {
+	padding-top:5%;
+	width:80%;
+	text-align: center;
+	margin:0 auto;
+}
+.paintingArea{
+	width:80%;
+	margin:0 auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.painting {
+	width:100%;
+    height:100%;
+}
+/*-------------------------------------搜索作品576以下----------------------------------*/
+#workVersionCard{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 5%
+}
+#searchArea {
+	width:100% !important;
+}
+
+#Main {
+	width:100%;
+	text-align: center;
+	margin: 0 auto;
+}
+table {
+	width:100%;
+	border-collapse: collapse;
+	text-align: center;
+	cursor: default;
+	color: #333333;
+	margin: 0 auto;
+}
+#workInfoCard {
+   width: 80%;
+   margin:0 auto;
+   margin-top: 5%;
+   margin-bottom: 5%;
+}
+.serialNum,.subTime,.appraise{
+	display: none;
+}
+/*---------------------------------作品结果576以下---------------------------*/
+.recordTop{
+	width:70%;
+	margin: 0 auto;
+	margin-top:10%;
+}
+
+#back {
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-left:5%;
+}
+.workName {
+	width: 201px;
+	margin: 0 auto;
+	font-size:20px;
+    padding-top:25%;
+
+}
+#setting {
+	width: 30px;
+	height: 30px;
+	float: right;
+	margin-right:5%;
+}
+.btnArea {
+	width:70%;
+	margin: 0 auto;
+	margin-bottom:10%;
+}
+.repeatBtn {
+	float: left;
+	margin-left:5%;
+}
+.completeBtn {
+	float: right;
+	margin-right:5%;
+}
+
+.containers {
+	width:70%;
+	height:489px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	margin-top: 5%;
+}
+.direction{
+	position: absolute;
+	top:68%;
+	left:7%;
+	z-index: 2;
+}
+/*-------------------------录制页面576以下------------------------------*/
+.contactTop {
+	width: 350px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+.map{
+	width:80%;
+	margin: 0 auto;
+}
+iframe{
+	width: 100%;
+   	height:200px;
+}
+.contactArea {
+	width:80%;
+	height: 250px;
+	background-color: white;
+	box-shadow: 5px 5px 8px #a3a3a3;
+	text-align: center;
+	margin:0 auto;
+}
+.contactWay {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	font-size: 14px;
+	white-space: nowrap;
+}
+.contactWayTitle {
+	font-weight: bold;
+	margin-bottom:10%;
+}
+.contactArea::after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+.contactBottom {
+	width:300px;
+	padding-top:10%;
+	margin: 0 auto;
+	margin-bottom:10%;
+}
+.contactQueTitle{
+	font-weight: bold;
+}
+.contactIcon {
+	width: 30px;
+	height: 30px;
+}
+
+#contactUserName, #contactEmail {
+	width:300px;
+	float: left;
+	margin-top: 5%;
+}
+
+#contactMessage {
+	width:300px;
+	height: 150px;
+	margin-top: 43%;
+}
+#contactSubmit {
+	width: 160px;
+	margin-left:70px;
+	margin-top: 10%;
+}
+#twitterIcon{
+	margin: 0 5%;
+}
+/*----------------------联系方式576以下-----------------------*/
+.outputArea {
+	width:70%;
+	border-radius: .25rem;
+	border: 1px solid rgba(0,0,0,.15);
+	margin: 0 auto;
+	margin-top:10%;
+	margin-bottom:10%;
+}
+.outputHead {
+	margin-top:10%;
+}
+.outputIcon {
+	width: 25px;
+	height: 25px;
+}
+#revert {
+	float: left;
+	margin-left: 5%;
+}
+#feedback {
+	float: right;
+	margin-right: 5%;
+}
+.outputTitle {
+	display: flex;
+	width: 190px;
+	margin: 0 auto;
+	align-items: center;
+	padding-top:15%;
+}
+#repeat {
+	float: left;
+	margin-left: 5%
+}
+.outputContent1{
+	margin-top: 5%;
+}
+ .outputContent2 {
+	margin-top: 20%;
+	margin-bottom:10%;
+}
+.demo {
+	width:250px;
+	margin: 0 auto;
+}
+.player1_Opt, .player2_Opt {
+  width: 182px;
+  margin:0 auto;
+}
+#out_uploadBtn, #downloadBtn {
+	background: #ffffff;
+	border: 1px solid #ffdf26;
+	height:35px;
+	margin-top: 5%;
+}
+ #downloadBtn{
+ 	margin-left: 5%;
+ }
+#uploadImg, #downloadImg {
+	float: left;
+	width: 20px;
+	height: 20px;
+}
+.uploadText, .downloadText {
+	float: right;
+}
+/*------------------------输出结果页面576以下----------------*/
+}
+
+@media (min-width: 576px) {
+.indexContainer {
+	height: 525px;
+}
+#smallMenu {
+	display: block;
+	position: absolute;
+	left: 15%;
+}
+#indexNav, #workNav, #recordNav, #contactNav, .registerArea {
+	display: none;
+}
+#signIn {
+	position: absolute;
+	right: 15%;
+}
+
+.description {
+	width: 500px;
+	height: 350px;
+	position: absolute;
+	left: 0;
+	top: 15%;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 1;
+	text-align: center;
+}
+.tutorialContainer {
+	width: 350px;
+	margin: 0 auto;
+}
+.tutorialText {
+	width: 335px;
+	margin-top: 15%;
+	margin: 0 auto;
+	padding: 20px;
+}
+#tImg1, #tImg2, #tImg3 {
+	width: 350px;
+	height: 262.5px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+.bottomHr {
+	width: 80%;
+	margin: 0 auto;
+}
+.tabBarContainer {
+	width: 100%;
+	margin-top: 5%;
+}
+.tabBar {
+	text-align: center;
+	background: #f4f4f4;
+	padding: 5%;
+}
+.tBIContainer {
+	margin-top: 3%;
+	margin-bottom: 1%;
+}
+.tabBarIcon {
+	width: 24px;
+	height: 24px;
+	margin-left: 1%;
+}
+.rightState {
+	margin: 3% 0 0;
+}
+
+/*------------------------------------首页576以上--------------------------------------*/
+.funIntro {
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 15%;
+}
+.nav-masthead .nav-link + .nav-link {
+	margin-left: 3.5rem;
+}
+
+.formArea {
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+#audioFile,#musicScore{
+	margin-top:20%;
+}
+.createArea {
+	width: 160px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top:15%;
+	margin-bottom: 5%;
+}
+/*-------------------------------------上传作品页576以上-------------------------------*/
+.searchBlock{
+	padding-top:5%;
+	width: 510px;
+	text-align: center;
+	margin:0 auto;
+}
+.paintingArea{
+	width: 400px;
+	margin:0 auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.painting {
+	width: 400px;
+    height: 300px;
+}
+/*-----------------------------搜素作品576以上--------------------------------*/
+#workVersionCard{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 5%
+}
+#searchArea {
+	width:100% !important;
+}
+
+#Main {
+	width:100%;
+	text-align: center;
+	margin: 0 auto;
+}
+table {
+	width:100%;
+	border-collapse: collapse;
+	text-align: center;
+	cursor: default;
+	color: #333333;
+	margin: 0 auto;
+}
+#workInfoCard {
+   width: 50%;
+   margin:0 auto;
+   margin-top: 5%;
+   margin-bottom: 5%;
+}
+
+/*----------------------------------------搜索作品结果576以上----------------------------*/
+.recordTop{
+	width: 70%;
+	margin: 0 auto;
+	margin-top:10%;
+}
+
+#back {
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-left:5%;
+}
+.workName {
+	width: 250px;
+	margin: 0 auto;
+	font-size: 24px;
+	padding-top: 0;
+}
+#setting {
+	width: 30px;
+	height: 30px;
+	float: right;
+	margin-right:5%;
+}
+.btnArea {
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 5%;
+}
+.repeatBtn {
+	float: left;
+	margin-left:5%;
+}
+.completeBtn {
+	float: right;
+	margin-right:5%;
+}
+
+.containers {
+	width: 70%;
+	height:489px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	margin-top: 5%;
+}
+.direction{
+	position: absolute;
+	top:100.5%;
+	left:7%;
+	z-index: 2;
+}
+/*.audio-player {
+	width: 100px;
+	position: absolute;
+	top: 150%;
+}*/
+/*-----------------------录制页面576以上-----------------------*/
+.contactTop {
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+.map{
+	width:80%;
+	margin: 0 auto;
+}
+iframe{
+	width: 100%;
+   	height:200px;
+}
+.contactArea {
+	width:80%;
+	height: 250px;
+	background-color: white;
+	box-shadow: 5px 5px 8px #a3a3a3;
+	text-align: center;
+	margin:0 auto;
+}
+.contactWay {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	font-size: 14px;
+	white-space: nowrap;
+}
+.contactWayTitle {
+	font-weight: bold;
+	margin-bottom:10%;
+}
+.contactArea::after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+.contactBottom {
+	width:500px;
+	padding-top:10%;
+	margin: 0 auto;
+	margin-bottom:10%;
+}
+.contactQueTitle{
+	font-weight: bold;
+	margin-bottom:5%;
+}
+.contactIcon {
+	width: 30px;
+	height: 30px;
+}
+
+#contactUserName, #contactEmail {
+	width:225px;
+	float: left;
+	margin-top: 0;
+}
+#contactEmail {
+	margin-left: 50px;
+}
+#contactMessage {
+	width:500px;
+	height: 150px;
+	margin-top:17%;
+}
+#contactSubmit {
+	width: 160px;
+	margin-left: 170px;
+	margin-top:5%;
+}
+#twitterIcon{
+	margin: 0 5%;
+}
+/*--------------以上联系方式页面576--------------------*/
+.outputArea {
+	width:70%;
+	border-radius: .25rem;
+	border: 1px solid rgba(0,0,0,.15);
+	margin: 0 auto;
+	margin-top:10%;
+	margin-bottom:10%;
+}
+.outputHead {
+	margin-top:10%;
+}
+.outputIcon {
+	width: 25px;
+	height: 25px;
+}
+#revert {
+	float: left;
+	margin-left: 5%;
+}
+#feedback {
+	float: right;
+	margin-right: 5%;
+}
+.outputTitle {
+	display: flex;
+	width: 190px;
+	margin: 0 auto;
+	align-items: center;
+}
+#repeat {
+	float: left;
+	margin-left: 5%
+}
+.outputContent1{
+	margin-top:10%;
+}
+ .outputContent2 {
+	margin-top:15%;
+	margin-bottom:10%;
+}
+.demo {
+	width:350px;
+	margin: 0 auto;
+}
+.player1_Opt, .player2_Opt {
+  width: 182px;
+  margin:0 auto;
+}
+#out_uploadBtn, #downloadBtn {
+	background: #ffffff;
+	border: 1px solid #ffdf26;
+	height:35px;
+	margin-top: 5%;
+}
+ #downloadBtn{
+ 	margin-left: 5%;
+ }
+#uploadImg, #downloadImg {
+	float: left;
+	width: 20px;
+	height: 20px;
+}
+.uploadText, .downloadText {
+	float: right;
+}
+/*---------------------输出结果576以上----------------------*/
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+.indexContainer {
+	height: 525px;
+}
+#smallMenu {
+	display: block;
+}
+#indexNav, #workNav, #recordNav, #contactNav, .registerArea {
+	display: none;
+}
+#smallMenu {
+	display: block;
+	position: absolute;
+	left: 15%;
+}
+#signIn {
+	position: absolute;
+	right: 15%;
+}
+.description {
+	position: absolute;
+	left: -25%;
+	z-index: 1;
+	text-align: left;
+}
+.tutorialContainer {
+	width: 400px;
+	margin: 0 auto;
+}
+#tImg1, #tImg2, #tImg3 {
+	width: 400px;
+	height: 300px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+.bottomHr {
+	width: 60%;
+	margin: 0 auto;
+}
+.tabBarContainer {
+	width: 100%;
+	margin-top: 5%;
+}
+.tabBar {
+	text-align: center;
+	background: #f4f4f4;
+	padding: 2%;
+}
+.tBIContainer {
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+.tabBarIcon {
+	width: 24px;
+	height: 24px;
+	margin-left: 1%;
+}
+.rightState {
+	margin: 2% 0 0;
+}
+
+/*----------------------------------首页768------------------------------------*/
+.funIntro {
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 15%;
+}
+.formArea {
+	width: 300px;
+	height: 1750px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+#audioFile,#musicScore{
+	margin-top:20%;
+}
+.createArea {
+	width: 160px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top:5%;
+	margin-bottom: 5%;
+}
+/*------------------------------上传作品768---------------------------------*/
+#workVersionCard{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 5%
+}
+#searchArea {
+	width:100% !important;
+}
+.appraise{
+	display:none;
+}
+
+#Main {
+	width:100%;
+	text-align: center;
+	margin: 0 auto;
+}
+table {
+	width:100%;
+	border-collapse: collapse;
+	text-align: center;
+	cursor: default;
+	color: #333333;
+	margin: 0 auto;
+}
+#workInfoCard{
+	width: 300px;
+}
+/*--------------------------作品结果768-----------------------------------*/
+.contactTop {
+	width: 70%;
+	height: 450px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+.contactWay {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	font-size: 14px;
+	white-space: nowrap;
+	margin-left:35%;
+}
+.map {
+	position: absolute;
+	margin-top: 75px;
+}
+
+.contactWayTitle {
+	font-weight: bold;
+	margin-bottom:10%;
+}
+.contactArea {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-size: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	float: right;
+	width:70%;
+	height: 450px;
+	background-color: white;
+	box-shadow: 5px 5px 8px #a3a3a3;
+	text-align: center;
+}
+
+.contactArea::after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+.contactQueTitle{
+	font-weight: bold;
+	margin-bottom:5%;
+}
+.contactIcon {
+	width: 30px;
+	height: 30px;
+}
+.contactBottom {
+	width:600px;
+	padding-top: 5%;
+	margin: 0 auto;
+	margin-bottom: 5%;
+}
+#contactUserName, #contactEmail {
+	width:275px;
+	float: left;
+}
+#contactEmail {
+	margin-left: 50px;
+}
+#contactMessage {
+	width:600px;
+	height: 150px;
+	margin-top:15%;
+}
+#contactSubmit {
+	width: 160px;
+	margin-left: 220px;
+	margin-top: 5%;
+}
+
+iframe{
+	width:300px;
+	height: 300px;
+}
+/*-------------------联系方式768以上------------------------*/
+.outputArea {
+	margin-top:5%;
+}
+.demo {
+	width:450px;
+	margin: 0 auto;
+}
+/*--------------------输出结果768以上------------------*/
+.recordTop{
+	width:70%;
+	margin: 0 auto;
+	margin-top:5%;
+}
+.direction{
+	position: absolute;
+	top:102%;
+}
+/*---------------------录制页面768以上----------------*/
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+#smallMenu {
+	display: none;
+}
+#indexNav, #workNav, #recordNav, #contactNav {
+	display: block;
+}
+.nav-masthead .nav-link + .nav-link {
+	margin-left: 3.5rem;
+}
+#signIn {
+	position: absolute;
+	right: 12%;
+}
+.description {
+	position: absolute;
+	left: -40%;
+	z-index: 1;
+	text-align: left;
+}
+.registerArea, .placeholder {
+	display: block;
+}
+.placeholder {
+	width: 350px;
+	height: 375px;
+	top: 23%;
+	right: 5%;
+}
+.registerArea {
+	position: absolute;
+	top: 23%;
+	right: 5%;
+	width: 350px;
+}
+.tutorialText {
+	margin: 0;
+	position: absolute;
+	right: 10%;
+	padding: 20px;
+}
+#getLink {
+	margin-top: 5%;
+}
+#selectPart {
+	margin-top: 23%
+}
+#vertualTrain {
+	margin-top: 41%
+}
+#tImg1, #tImg2, #tImg3 {
+	width: 400px;
+	height: 300px;
+	position: absolute;
+	left: 10%;
+	top: 118%;
+}
+#tImg2, #tImg3 {
+	display: none;
+}
+.bottomHr {
+	width: 45%;
+	margin: 0 auto;
+}
+.tabBarContainer {
+	width: 100%;
+	margin-top: 60%;
+}
+.tabBar {
+	text-align: center;
+	background: #f4f4f4;
+	padding: 2%;
+}
+.tBIContainer {
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+.tabBarIcon {
+	width: 24px;
+	height: 24px;
+	margin-left: 1%;
+}
+.rightState {
+	margin: 2% 0 0;
+}
+/*-----------------------------------------首页992---------------------------------*/
+.funIntro {
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 10%;
+}
+.formArea {
+	width: 700px;
+	height:1200px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+#infoInput{
+	float: left;
+}
+#audioFile{
+	float: right;
+	margin: 0;
+}
+
+#musicScore{
+	float: left;
+	margin-top:10%;
+}
+.createArea {
+	width: 160px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 5%;
+}
+/*-------------------------------------上传作品992以上------------------------------------*/
+#workVersionCard{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 5%
+}
+#searchArea {
+	width:100% !important;
+}
+.appraise{
+	display:block;
+	margin-top: 13%;
+}
+#Main {
+	width:100%;
+	text-align: center;
+	margin: 0 auto;
+}
+table {
+	width:100%;
+	border-collapse: collapse;
+	text-align: center;
+	cursor: default;
+	color: #333333;
+	margin: 0 auto;
+}
+/*-------------------作品结果992以上--------------------*/
+
+.contactWay {
+	margin-left:40%;
+}
+
+iframe{
+	width:400px;
+	height: 300px;
+}
+.contactBottom {
+	width: 800px;
+}
+
+#contactUserName, #contactEmail {
+	width: 375px;
+	float: left;
+}
+
+#contactMessage {
+	width: 800px;
+	height: 150px;
+	margin-top: 13%;
+}
+#contactSubmit {
+	width: 160px;
+	margin-left: 320px;
+	margin-top: 5%;
+}
+/*------------------------联系方式992以上------------------------*/
+.outputArea {
+	width:70%;
+	height:350px;
+	margin-top:5%;
+	margin-bottom:5%;
+}
+.outputHead {
+	margin-top:5%;
+}
+.outputTitle {
+	display: flex;
+	width: 190px;
+	margin: 0 auto;
+	align-items: center;
+}
+.outputContent1{
+	margin-top:5%;
+}
+ .outputContent2 {
+	padding-top:10%;
+}
+.demo {
+	width:350px;
+    float: left;
+    margin-left: 5%;
+}
+.player1_Opt, .player2_Opt {
+  width: 182px;
+  float:right;
+  margin-right: 5%;
+}
+#out_uploadBtn, #downloadBtn {
+	height:35px;
+	margin-top: 10%;
+}
+ #downloadBtn{
+ 	margin-left: 5%;
+ }
+/*------------------------输出结果992以上--------------------------*/
+.recordTop{
+	width:831px;
+	margin: 0 auto;
+	margin-top:5%;
+}
+
+#back {
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-left:5%;
+}
+.workName {
+	width: 201px;
+	margin: 0 auto;
+	font-size:20px;
+
+}
+#setting {
+	width: 30px;
+	height: 30px;
+	float: right;
+	margin-right:5%;
+}
+.btnArea {
+	width:831px;
+	margin: 0 auto;
+	margin-bottom:5%;
+}
+.repeatBtn {
+	float: left;
+	margin-left:5%;
+}
+.completeBtn {
+	float: right;
+	margin-right:5%;
+}
+.containers {
+	width:831px;
+	height:489px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	margin-top: 5%;
+}
+.direction{
+	position: absolute;
+	top:108%;
+	left:5%;
+	z-index: 2;
+}
+/*----------------------录制页面992以上----------------------*/
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+.indexContainer {
+	height: 570px;
+}
+#smallMenu {
+	display: none;
+}
+#indexNav, #workNav, #recordNav, #contactNav {
+	display: block;
+}
+.nav-masthead .nav-link + .nav-link {
+	margin-left: 5rem;
+}
+.description {
+	position: absolute;
+	top: 10%;
+	left: -40%;
+	z-index: 1;
+	text-align: left;
+}
+.placeholder {
+	width: 450px;
+	height: 375px;
+	top: 22%;
+	right: 12%;
+}
+.registerArea {
+	position: absolute;
+	top: 24%;
+	right: 12%;
+	width: 450px;
+}
+#getLink {
+	margin-top: 5%;
+}
+#selectPart {
+	margin-top: 20%
+}
+#vertualTrain {
+	margin-top: 35%
+}
+#tImg1, #tImg2, #tImg3 {
+	width: 500px;
+	height: 375px;
+	position: absolute;
+	left: 10%;
+	top: 106%;
+}
+#tImg2, #tImg3 {
+	display: none;
+}
+.bottomHr {
+	width: 40%;
+	margin: 0 auto;
+}
+.tabBarContainer {
+	width: 100%;
+	margin-top: 50%;
+}
+.tabBar {
+	text-align: center;
+	background: #f4f4f4;
+	padding: 1.5%;
+}
+.tBIContainer {
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+.tabBarIcon {
+	width: 24px;
+	height: 24px;
+	margin-left: 1%;
+}
+.rightState {
+	margin: 1% 0 0;
+}
+
+/*--------------------------------------首页1200-----------------------------------*/
+.funIntro {
+	text-align: center;
+	width: 60%;
+	margin: 0 auto;
+	margin-top:5%;
+}
+.formArea {
+	width: 1000px;
+	height:600px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+#infoInput{
+	float: left;
+}
+#audioFile{
+	float: left;
+	margin: 0;
+	margin-left: 50px;
+}
+
+#musicScore{
+	float: left;
+	margin: 0;
+	margin-left: 50px;
+}
+.createArea {
+	width: 160px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 5%;
+}
+/*---------------------------上传作品1200以上---------------------------------*/
+.searchMain{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.searchBlock{
+	padding-top:5%;
+	width: 510px;
+	text-align: center;
+	float: left;
+}
+.paintingArea{
+	width: 400px;
+	float:right;
+}
+.painting {
+	width: 400px;
+    height: 300px;
+}
+
+/*--------------------------------------搜索作品1200以上---------------------------*/
+#workVersionCard{
+	width: 60%;
+    float: left;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+#searchArea {
+	width:100% !important;
+}
+.appraise{
+	display:block;
+	margin-top: 13%;
+}
+#Main {
+	width:100%;
+	text-align: center;
+	margin: 0 auto;
+}
+table {
+	width:100%;
+	border-collapse: collapse;
+	text-align: center;
+	cursor: default;
+	color: #333333;
+	margin: 0 auto;
+}
+#workInfoCard{
+	float: right;
+	margin-right: 5%;
+}
+/*------------------------------搜索作品结果1200-------------------------------*/
+.direction{
+	position: absolute;
+	top:98.5%;
+	left:15%;
+	z-index: 2;
+}
+
+/*--------------------------------录制页面1200---------------------------*/
+iframe{
+	width: 533px;
+	height: 300px;
+}
+/*---------------以上为联系方式1200------------------*/
+.outputArea {
+	width:70%;
+	height:370px;
+}
+
+ .outputContent2 {
+	padding-top:3%;
+}
+.demo {
+	width:550px;
+    float: left;
+    margin-left: 5%;
+}
+/*---------------------输出结果1200以上------------------*/
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+#smallMenu {
+	display: none;
+}
+#indexNav, #workNav, #recordNav, #contactNav {
+	display: block;
+}
+.description {
+	position: absolute;
+	top: 10%;
+	left: -40%;
+	z-index: 1;
+	text-align: left;
+}
+.placeholder {
+	width: 550px;
+	height: 380px;
+	top: 22%;
+	right: 12%;
+}
+.registerArea {
+	position: absolute;
+	top: 22%;
+	right: 12%;
+	width: 550px;
+}
+.tutorialText {
+	margin: 0;
+	position: absolute;
+	right: 15%;
+	padding: 20px;
+}
+#getLink {
+	margin-top: 5%;
+}
+#selectPart {
+	margin-top: 20%
+}
+#vertualTrain {
+	margin-top: 35%
+}
+#tImg1, #tImg2, #tImg3 {
+	width: 600px;
+	height: 450px;
+	position: absolute;
+	left: 15%;
+	top: 108%;
+}
+#tImg2, #tImg3 {
+	display: none;
+}
+.bottomHr {
+	width: 30%;
+	margin: 0 auto;
+}
+.tabBarContainer {
+	width: 100%;
+	margin-top: 50%;
+}
+.tabBar {
+	text-align: center;
+	background: #f4f4f4;
+	padding: 1%;
+}
+.tBIContainer {
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+.tabBarIcon {
+	width: 24px;
+	height: 24px;
+	margin-left: 1%;
+}
+.rightState {
+	margin: 1% 0 0;
+}
+/*--------------------------------------首页1400-------------------------------*/
+.funIntro {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+/*---------------------------------上传作品1400以上-----------------------------*/
+#workVersionCard{
+	width: 60%;
+	margin-left: 5%;
+	float:left;
+}
+#searchArea {
+	width:100% !important;
+}
+#Main {
+	width:100%;
+	text-align: center;
+	margin: 0 auto;
+}
+table {
+	width:100%;
+	border-collapse: collapse;
+	text-align: center;
+	cursor: default;
+	color: #333333;
+	margin: 0 auto;
+}
+
+
+/*-------------------------------------搜索作品结果1400----------------------------------*/
+.btnArea {
+	width: 60%;
+	margin: 0 auto;
+	margin-bottom: 5%;
+}
+
+/*-----------------------以下为联系方式1400-------------------------*/
+.contactWay {
+	margin-left:25%;
+}
+/*----------------录制页面1400以上----------------------------*/
+.direction{
+	position: absolute;
+	top:109%;
+	left:15%;
+	z-index: 2;
+}
+}
+/*以上为自适应*/
+
+
+
+
+
+
+.indexContainer {
+	background: #f4f4f4;
+	width: 100%;
+	z-index: -1;
+}
+.inner {
+	margin-top: 2.5%
+}
+.nav-masthead .nav-link {
+	color: #a3a3a3;
+	padding: .25rem 0;
+	font-weight: 700;
+	border-bottom: .25rem solid transparent;
+}
+.nav-masthead .nav-link:hover, .nav-masthead .nav-link:focus {
+	border-bottom-color: #ffdf26;
+}
+.nav-masthead .active {
+	color: #333333;
+	border-bottom-color: #ffdf26;
+}
+#nav_logo {
+	position: absolute;
+	left: 5%;
+}
+.logo {
+	width: 30px;
+	margin-top: -13%
+}
+#dropdownMenu2 {
+	width: 30px;
+}
+#signUp {
+	position: absolute;
+	right: 5%;
+}
+#me {
+	position: absolute;
+	right: 10%;
+}
+
+.heading {
+	font-weight: bold;
+}
+.lead {
+	margin-bottom: 10%;
+}
+button {
+	width: 160px;
+	height: 50px;
+	border-radius: 50px;
+	font-weight: bold;
+}
+.PracticeBtn {
+	background-color: #ffdf26;
+	border: 1px solid white;
+}
+.uploadBtn {
+	margin-left: 2%;
+	border: 1px solid #333;
+	background-color: #333333;
+	color: white;
+}
+/*以下为注册表单*/
+.registerArea {
+	border-radius: .25rem;
+	border: 1px solid rgba(0,0,0,.15);
+	background-color: #fdfdfd;
+	background-clip: padding-box;
+	padding: .5rem 0;
+	margin: .125rem 0 0;
+	min-width: 10rem;
+	z-index: 1;
+}
+.placeholder {
+	display: none;
+	border-radius: .25rem;
+	position: absolute;
+	background-clip: padding-box;
+	min-width: 10rem;
+	z-index: 2;
+}
+/*.tutorialText {
+	margin-top: 15%
+}*/
+#signInBtn {
+	background-color: #ffdf26;
+	border: 1px solid #ffffff;
+	color: #333333;
+	width: 160px;
+	height: 50px;
+	border-radius: 50px;
+	font-weight: bold;
+	line-height: 40px;
+}
+#forgetPW {
+	float: left;
+	margin-left: 5%;
+	padding: 1.5% 0 1.5% 0;
+}
+.signUpBtn {
+	float: right;
+	margin-right: 5%;
+	padding: 1.5% 0 1.5% 0;
+}
+#getLink:hover {
+	border-color: #d1d5da;
+	box-shadow: 0 8px 24px rgba(149,157,165,.2);
+}
+#selectPart:hover {
+	border-color: #d1d5da;
+	box-shadow: 0 8px 24px rgba(149,157,165,.2);
+}
+#vertualTrain:hover {
+	border-color: #d1d5da;
+	box-shadow: 0 8px 24px rgba(149,157,165,.2);
+}
+button {
+	width: 160px;
+	height: 50px;
+	border-radius: 50px;
+	font-weight: bold;
+	background-color: #ffdf26;
+	border: 1px solid white;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	color: #000;
+	text-decoration: none;
+}
+.tutorialLink {
+	color: #0366D6;
+}
+.signUp-box {
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100vh; /* vh 视口高度 viewport height 百分比单位*/
+	background-image: linear-gradient(  45deg,  #9fbaa8,  #31354c  ); /*设置颜色渐变 方向(0deg垂直向上) 起点颜色 终点颜色*/
+	transition: 0.4s; /*过度效果  property duration timing-function delay 默认属性:all 0 ease 0*/
+}
+.signUpForm {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /*定义 2D 转换8 */
+	color: white;
+	text-align: center;
+}
+.signUpForm h1 {
+	font-weight: 400;
+	margin-top: 0;
+}
+.txtb {
+	display: block;
+	box-sizing: border-box;
+	width: 240px;
+	background: #ffffff28;
+	border: 1px solid white;
+	padding: 10px 20px;
+	color: white;
+	outline: none;
+	margin: 10px 0;
+	border-radius: 6px;
+	text-align: center;
+}
+.login-btn {
+	width: 240px;
+	background: #2c3e50;
+	border: 0;
+	color: white;
+	padding: 10px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.closeSignUp {
+	color: #000;
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	cursor: pointer;
+	font-size: 30px;
+	opacity: 0.7;
+	transform: rotate(45deg); /*定义 2D 转换8 */
+}
+
+/*------------------------------------------以上为index页面---------------------------*/
+
+.funExplain{
+	text-indent: 2em;
+}
+.funTitle{
+	margin:0;
+	text-align: center;
+	font-size: 36px;
+}
+#secondNav {
+	margin-top: 5%;
+	font-weight: bold;
+}
+.formPart {
+	width: 300px;
+	height: 533px;
+	background-color: white;
+	box-shadow: 5px 5px 8px #a3a3a3;
+}
+.titleArea {
+	height: 100px;
+}
+.formTitle {
+	line-height: 100px;
+	margin: 0;
+	font-weight: bold;
+	text-align: center;
+}
+.remark {
+	color: #a3a3a3;
+	font-size: 14px;
+	margin-left: 2%;
+}
+.addPartArea {
+	width: 250px;
+	height: 50px;
+	margin: 0 auto;
+}
+.addPartLine {
+	width: 250px;
+	border: 1px dashed #a3a3a3;
+}
+.addPartText {
+	text-align: center;
+	line-height: 50px;
+	margin: 0;
+}
+#formInput {
+	width: 250px;
+	margin-left: 25px;
+}
+.scoreUploadArea {
+	width: 250px;
+	height: 140px;
+	margin: 0 auto;
+	border: 1px dashed #a3a3a3;
+	text-align: center;
+}
+.scoreUploadBtn {
+	margin-top: 25px;
+}
+.addIcon {
+	width: 50px;
+	margin: 0 auto;
+}
+.addText {
+	line-height: 40px;
+}
+.scoreChoice {
+	width: 250px;
+	margin: 0 auto;
+	margin-top: 10%;
+}
+.saveBtn {
+	background-color: #ffdf26;
+	border: 1px solid white;
+	z-index: 3;
+	margin-left: 70px;
+	width: 160px;
+	height: 50px;
+	border-radius: 50px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+}
+#saveInfo {
+	margin-top: 10%;
+}
+#saveAudio {
+	margin-top: 29%;
+}
+#saveScore {
+	margin-top: 23%;
+}
+.createLink {
+	background-color: #333333;
+	color: white;
+}
+/*-----------------------------------------以上为上传作品页面----------------------------*/
+
+
+.lyric {
+	width: 100%;
+	margin: 0 auto;
+}
+/*以下为轮播图*/
+/*.containers {
+	width: 1000px;
+	height: 550px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}*/
+.ulContainer {
+	width: 835px;
+	height: 2934px;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	left: 0;
+	right: 0;
+	transition: all 0.5s;
+}
+.lis {
+	width:835px;
+	height: 100%;
+}
+.lis img {
+	width: 100%;
+	height: 100%;
+}
+/*.direction {
+	position: absolute;
+	top: 75%;
+	left: 75%;
+	z-index: 11;
+}*/
+.direction img:nth-child(1) {
+	position: absolute;
+	top: -50px;
+	cursor: pointer;
+}
+.direction img:nth-child(2) {
+	position: absolute;
+	bottom: -50px;
+	cursor: pointer;
+}
+#top, #bottom {
+	width: 24px;
+	height: 24px;
+}
+
+
+/*以上为录制作品页面*/
+
+
+.SearchTitle {
+	font-weight: bold;
+	margin-bottom: 2.5%;
+}
+.formSearch {
+	padding-top: 5%;
+	width: 250px;
+	margin: 0 auto;
+}
+
+
+#formWorkLink, #formWorkPassword {
+	width: 250px;
+}
+.workSeek {
+	margin-top: 5%;
+	background-color: #ffdf26;
+	border: 1px solid white;
+}
+/*-----------------------------------------以上为查询作品页面-------------------------*/
+
+#workAudioCard {
+	float: right;
+	margin: 40% -15% 5% 0;
+}
+.workTitleArea {
+	background: #f4f4f4;
+	width: 100%;
+	height: 100px;
+}
+.workTitle {
+	float: left;
+	font-size: 20px;
+	line-height: 100px;
+	margin-left: 10%;
+}
+.SRIcon, .quIcon, .sortIcon, .micIcon {
+	width: 25px;
+	height: 25px;
+}
+#singBtn {
+	float: right;
+	margin: 0 0 5% 0;
+}
+#quBtn {
+	float: right;
+	margin: 0 2% 5% 0;
+}
+.vePlayIcon, .vesolvedIcon {
+	width: 25px;
+	height: 25px;
+}
+#starBtn {
+	float: right;
+	width: 125px;
+	padding: 0;
+	margin-right: 10%;
+	margin-top: 30px;
+}
+#partiBtn {
+	float: right;
+	width: 125px;
+	padding: 0;
+	margin-right: 1%;
+	margin-top: 30px;
+}
+.exPlayIcon {
+	width: 25px;
+	height: 25px;
+	float: right;
+	margin-right: 1%;
+}
+#dropdownMenuLink {
+	background: white;
+	color: #333333;
+	padding: 0;
+	border: 0;
+}
+#searchArea {
+	width: 50rem;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+.btn_audioWR, .btn_audioSop, .btn_audioAlt, .btn_audioTen, .btn_audioBas, .btn_audioPia, .btn_audio {
+	width: 25px;
+	height: 25px;
+	background: url(../images/play.png) no-repeat center bottom;
+	background-size: cover;
+}
+.tbTitle>th {
+	font-weight: 300;
+	text-align: center;
+}
+.tbContext:hover {
+	background-color: #eee !important;
+}
+td, td>a {
+	text-align: center;
+	padding: 10px 0 10px 0;
+	color: black;
+}
+#dropdownMenuButton {
+	background: white;
+	color: #333333;
+	padding: 0;
+	border: 0;
+	width: 100px;
+}
+#singBtn {
+	background: #ffffff;
+	border: 1px solid #ffdf26;
+	color: #333333;
+}
+#uploadWorkRefer, #uploadAccompaniment, #uploadVoice1, #uploadVoice2, #uploadVoice3 {
+	background-color: white;
+}
+/*以上为搜索结果页面*/
+
+/*.outputArea {
+	width: 50%;
+	border-radius: .25rem;
+	border: 1px solid rgba(0,0,0,.15);
+	margin: 0 auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}*/
+
+
+/*.outputTitle {
+	display: flex;
+	width: 190px;
+	margin: 0 auto;
+	align-items: center;
+}*/
+
+/*.outputContent1, .outputContent2 {
+	display: flex;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	align-items: center;
+}*/
+
+
+
+/*以上为输出页面*/
