@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="../public/css/style.css">
+<title>index | welcome to LINGER</title>
+
+</head>
+<body>
+<div class="indexContainer">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <nav class="nav nav-masthead justify-content-center"> 
+
+              <a class="nav-link" href="#" id="nav_logo">
+        	      <img src="../public/images/logo.png" class="logo">
+              </a> 
+      
+              <a class="nav-link active " href="#" id="indexNav">首页</a> 
+              <a class="nav-link" href="/form" id="workNav">作品管理</a> 
+              <a class="nav-link" href="/search" id="recordNav">练唱</a> 
+              <a class="nav-link" href="/contact" id="contactNav">联系我们</a>
+              
+              <div class="dropdown" id="smallMenu">
+                  <img class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="../public/images/smallMenu.png" >
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <button class="dropdown-item" type="button"><a href="/participate">作品管理</a></button>
+                      <button class="dropdown-item" type="button"><a href="/search">练唱</a></button>
+                      <button class="dropdown-item" type="button"><a href="/contact">联系我们</a></button>
+                    </div>
+               </div>
+
+
+              <a class="nav-link active" href="#" id="signIn">登录</a> 
+              <a class="nav-link" href="#" id="signUp">注册</a> 
+  
+      </nav>
+
+    </div>
+  </header>
+</div>
+<content>
+  <div class="description">
+    <h1 class="heading">基于合唱模式的<br>
+      在线协作平台</h1>
+    <br>
+    <p class="lead">LINGER帮助有远距离训练需求的合唱团进行<br>
+      基本的辅助练习。LINGER提供声音叠制仿真<br>
+      模拟及音频文件信息管理功能，致力成为<br>
+      在线演唱市场的补缺者。 </p>
+    <button class="PracticeBtn"  onclick="window.location.href='/search'">作品练唱</button>
+    <button class="uploadBtn" onclick="window.location.href='/form'">上传作品</button>
+  </div>
+</div>
+<div class="registerArea">
+  <form class="px-4 py-3">
+    <div class="form-group">
+      <label for="exampleDropdownFormEmail1">邮箱</label>
+      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" autocomplete='off'>
+    </div>
+    <div class="form-group">
+      <label for="exampleDropdownFormPassword1">密码</label>
+      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+        <label class="form-check-label" for="dropdownCheck">
+          下次自动登录
+        </label>
+      </div>
+    </div>
+    <label class="btn btn-primary" id="signInBtn">登录</label>
+  </form>
+  <div class="dropdown-divider"></div>
+  <a  href="#" id="forgetPW">忘记密码？</a>
+  <a href="#" class="signUpBtn">注册新账号</a>
+  
+</div>
+
+<img class="placeholder" src="../public/images/placeholder.png">
+
+
+  <div class="tutorialContainer">
+
+
+    <div class="tutorialText" id="getLink">
+      <h5>获得作品链接跳转到作品详情页</h5>
+      <p style="text-indent: 2em;margin:0">为尊重作品版权，作品链接及密码是作品上传方在本平台上传合唱资源时分配所得，参与者可据此跳转到作品详情页。</p>
+      <a class="tutorialLink" href="#">了解有关作品上传及链接的信息 >></a>
+    </div>
+     <img src="../public/images/tutorial/step1Img.jpg" id="tImg1"> 
+
+
+    <div class="tutorialText" id="selectPart">
+      <h5>选择演唱声部和希望叠加的版本</h5>
+      <p style="text-indent: 2em;margin:0" >参与者可根据喜好选择录制时听到的音频和在哪个版本上叠加上自己的声音，更好地辅助训练</p>
+      <a class="tutorialLink" href="#">了解有关作品管理的信息 >></a>
+    </div>
+    <img src="../public/images/tutorial/step2Img.jpg" id="tImg2">
+
+    <div class="tutorialText" id="vertualTrain">
+      <h5>虚拟仿真训练</h5>
+      <p style="text-indent: 2em;margin:0">虚拟仿真训练建基于您选择叠加的<br>
+        版本，录制完成后，您可将输出的结果<br>
+        发布到作品管理页，辅助其他参与者训练</p>
+      <a class="tutorialLink" href="#">了解有关声音叠制的信息 >></a>
+    </div>
+    <img src="../public/images/tutorial/step3Img.jpg" id="tImg3"> 
+
+
+    </div>
+  <div class="tabBarContainer">
+     <div class="tabBar">
+  	   <p>LINGER&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;隐私&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;条款&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;招贤纳士&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;支持&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;安全
+  	   </p>
+  	   <hr class="bottomHr">
+
+      <div class="tBIContainer">   
+        <img src="../public/images/twitter.png" class="tabBarIcon">        
+        <img src="../public/images/facebook.png" class="tabBarIcon">        
+        <img src="../public/images/instagram.png" class="tabBarIcon">        
+        <img src="../public/images/youtube.png" class="tabBarIcon">        
+        <img src="../public/images/weibo.png" class="tabBarIcon">
+      </div>
+
+      <p class="rightState">©2021 LINGER，Inc.保留所有权利。</p>
+    </div>
+  </div>
+</content>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
+<script type="text/javascript">
+	
+	
+			var description = document.getElementsByClassName('description');
+
+			
+		
+
+
+   var getLink = document.getElementById('getLink');
+    var selectPart = document.getElementById('selectPart');
+     var vertualTrain = document.getElementById('vertualTrain');
+     var tImg1 = document.getElementById('tImg1');
+     var tImg2 = document.getElementById('tImg2');
+     var tImg3 = document.getElementById('tImg3');
+
+     getLink.onmouseover=function(){
+         tImg2.style.display="none";
+           tImg3.style.display="none";
+            tImg1.style.display="block";
+     }
+
+     selectPart.onmouseover=function(){
+         tImg1.style.display="none";
+          tImg3.style.display="none";
+            tImg2.style.display="block";
+     }
+ vertualTrain.onmouseover=function(){
+         tImg1.style.display="none";
+         tImg2.style.display="none";
+         tImg3.style.display="block";
+     }
+
+     
+     let signInBtn = document.querySelector('#signInBtn'),
+      placeholder = document.querySelector('.placeholder');
+
+     signInBtn.onclick=function(){
+     	$(".registerArea").css("display", "none");
+     	$(".placeholder").css("display", "block");
+     }
+
+</script>
+</body>
+</html>

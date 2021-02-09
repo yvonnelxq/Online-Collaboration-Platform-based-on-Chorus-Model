@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="../public/css/style.css">
+<title>search | practice</title>
+</head>
+<body>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <div class="inner">
+        <nav class="nav nav-masthead justify-content-center"> 
+          <a class="nav-link" href="/" id="nav_logo">
+            <img src="../public/images/logo.png" class="logo">
+          </a> 
+          <a class="nav-link" href="/" id="indexNav">首页</a> 
+          <a class="nav-link" href="/form" id="workNav">作品管理</a> 
+          <a class="nav-link active" href="/search" id="recordNav">练唱</a> 
+          <a class="nav-link" href="/contact" id="contactNav">联系我们</a>
+
+          <div class="dropdown" id="smallMenu">
+                  <img class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="../public/images/smallMenu.png">
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <button class="dropdown-item" type="button"><a href="/">首页</a></button>
+                      <button class="dropdown-item" type="button"><a href="/participate">作品管理</a></button>
+                      <button class="dropdown-item" type="button"><a href="/contact">联系我们</a></button>
+                    </div>
+               </div> <a class="nav-link" href="#" id="me">ME</a> </nav>
+      </div>
+    </header>
+  </div>
+
+<div class="funIntro">
+  <h1 class="funTitle">练唱</h1>
+  <br>
+  <p class="funExplain">练唱是LINGER的一大核心功能，其中的声音叠制算法是平台为合唱团所独创。LINGER的仿真模拟可以助您达到与线下训练相近的效果，欢迎使用LINGER辅助合唱练习。</p>
+</div>
+
+<nav id="secondNav" class="nav nav-masthead justify-content-center">
+  <a class="nav-link active" href="#">查询</a> 
+  <a class="nav-link" href="/searchResult">作品详情</a> 
+  <a class="nav-link" href="/record">录制</a> 
+  <a class="nav-link" href="">输出</a> 
+</nav>
+
+<div class="searchMain">
+  <div class="searchBlock">
+    <h4 class="SearchTitle">请输入作品链接及密码</h4>
+    <p>为尊重作品的版权，平台不建议非原创作者非法公开作品<br>
+      作品链接及密码为作品上传方所设定，您可以提醒TA到作品管理库查找</p>
+    <div class="formSearch">
+      <div class="input-group mb-3" id="formWorkLink">
+        <div class="input-group-prepend"> <span class="input-group-text" id="basic-addon1">链接</span> </div>
+        <input type="text" class="form-control"  aria-label="workLink" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3" id="formWorkPassword">
+        <div class="input-group-prepend"> <span class="input-group-text" id="basic-addon1">密码</span> </div>
+        <input type="text" class="form-control"  aria-label="workPassword" aria-describedby="basic-addon1">
+      </div>
+    </div>
+	  	<button class="workSeek" onclick="window.location.href='/searchResult'">进入练唱</button>
+  </div>
+
+  <div class="paintingArea">
+    <img src="../public/images/placeholder.png" alt="" class="painting">
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

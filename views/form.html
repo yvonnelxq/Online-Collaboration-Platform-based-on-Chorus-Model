@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="../public/css/style.css">
+<title>workUpload | workManagement</title>
+</head>
+<body>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <nav class="nav nav-masthead justify-content-center"> 
+
+        
+              <a class="nav-link" href="/" id="nav_logo">
+                <img src="../public/images/logo.png" class="logo">
+              </a> 
+        <a class="nav-link" href="/" id="indexNav">首页</a> 
+        <a class="nav-link active" href="/form" id="workNav">作品管理</a> 
+        <a class="nav-link" href="/search" id="recordNav">练唱</a> 
+        <a class="nav-link" href="/contact" id="contactNav">联系我们</a> 
+        
+        <div class="dropdown" id="smallMenu">
+                  <img class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="../public/images/smallMenu.png" >
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <button class="dropdown-item" type="button"><a href="/">首页</a></button>
+                      <button class="dropdown-item" type="button"><a href="/search">练唱</a></button>
+                      <button class="dropdown-item" type="button"><a href="/contact">联系我们</a></button>
+                    </div>
+               </div>
+
+        <a class="nav-link" href="#" id="me">ME</a> 
+      </nav>
+    </div>
+  </header>
+</div>
+
+<div class="funIntro">
+  <h1 class="funTitle">作品管理</h1>
+  <br>
+  <p class="funExplain">在本平台上，您可以上传并管理您的合唱资源，后续当作品信息及文件发生变动时，您的修改记录也将得到保存。此外，平台会为您上传的作品生成一个固定的链接及密码，通过此链接及密码的分享，您的好友将可以参与到作品的仿真模拟练唱中。因此请跟随平台的引导进行操作。</p>
+</div>
+
+<nav id="secondNav" class="nav nav-masthead justify-content-center"> 
+  <a class="nav-link active" href="#">上传作品</a> 
+  <a class="nav-link" href="/initiate">我的发起</a> 
+  <a class="nav-link" href="/participate">我的参与</a>
+  <a class="nav-link" href="">我的收藏</a> 
+</nav>
+<!-- -------------------------------上传作品区域------------------------------------ -->
+<div class="formArea">
+	<form action="/upload" method="post" enctype="multipart/form-data">
+  <div class="InfoArea" id="infoInput">
+    <div class="formPart">
+      <div class="titleArea">
+        <h4 class="formTitle">作品信息</h4>
+      </div>
+      <div class="input-group mb-3" id="formInput">
+        <div class="input-group-prepend"><span class="input-group-text" >歌曲名称</span> </div>
+        <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3" id="formInput">
+        <div class="input-group-prepend"> <span class="input-group-text" >词作者</span> </div>
+        <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3" id="formInput">
+        <div class="input-group-prepend"> <span class="input-group-text" >曲作者</span> </div>
+        <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3" id="formInput">
+        <div class="input-group-prepend"> <span class="input-group-text" >拍号/调号</span> </div>
+        <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3" id="formInput">
+        <div class="input-group-prepend"> <span class="input-group-text" >速度</span> </div>
+        <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3" id="formInput">
+        <div class="input-group-prepend"> <span class="input-group-text" >乐器</span> </div>
+        <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3" id="formInput">
+        <div class="input-group-prepend"> <span class="input-group-text" >版权</span> </div>
+        <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <label class="saveBtn" id="saveInfo">保存</label>
+    </div>
+  </div>
+
+  <div class="InfoArea" id="audioFile">
+    <div class="formPart" >
+      <div class="titleArea">
+        <h4 class="formTitle">音频文件<small class="remark">支持.wav格式</small></h4>
+      </div>
+
+     <div class="input-group mb-3" id="formInput">
+        <div class="input-group-prepend">
+           <input type="file" name="workReference" id="WR_Inp" accept="audio/wav">
+          <span type="button" class="input-group-text" id="WR_Upload">上传</span> 
+        </div>
+        <input class="form-control"  aria-label="Username" aria-describedby="basic-addon1" placeholder="作品参考" disabled="disabled" id="uploadWorkRefer">
+      </div>
+
+      <div class="input-group mb-3" id="formInput">
+        <div class="input-group-prepend"> 
+          <input type="file" name="accompaniment" id="a_Inp" accept="audio/wav">
+          <span type="button" class="input-group-text" id="a_Upload">上传</span> 
+        </div>
+        <input class="form-control"  aria-label="Username" aria-describedby="basic-addon1" placeholder="无人声伴奏" disabled="disabled" id="uploadAccompaniment">
+      </div>
+
+      <div class="input-group mb-3" id="formInput">
+        <div class="input-group-prepend">
+        <input type="file" name="voice1" id="v1_Inp" accept="audio/wav"> 
+          <span class="input-group-text" type="button" id="v1_Upload">上传</span> 
+        </div>
+        <input class="form-control"  aria-label="Username" aria-describedby="basic-addon1" placeholder="声部1模唱" disabled="disabled" id="uploadVoice1">
+      </div>
+
+
+      <div class="input-group mb-3" id="formInput">
+        <div class="input-group-prepend">
+        <input type="file" name="voice2" id="v2_Inp" accept="audio/wav"> 
+          <span class="input-group-text" type="button" id="v2_Upload">上传</span> 
+        </div>
+        <input class="form-control"  aria-label="Username" aria-describedby="basic-addon1" placeholder="声部2模唱" disabled="disabled" id="uploadVoice2">
+      </div>
+
+      <div class="input-group mb-3" id="formInput">
+        <div class="input-group-prepend">
+        <input type="file" name="voice3" id="v3_Inp" accept="audio/wav"> 
+          <span class="input-group-text" type="button" id="v3_Upload">上传</span> 
+        </div>
+        <input class="form-control"  aria-label="Username" aria-describedby="basic-addon1" placeholder="声部3模唱" disabled="disabled" id="uploadVoice1">
+      </div>
+
+      <div class="addPartArea">
+        <hr class="addPartLine">
+        <p class="addPartText">+ 添加声部</p>
+        <hr class="addPartLine">
+      </div>
+      <label class="saveBtn" id="saveAudio">保存</label>
+    </div>
+  </div>
+<!-- -----------------------------以上音频文件上传------------------------------------ -->
+<div class="InfoArea" id="musicScore">
+  <div class="formPart">
+    <div class="titleArea">
+      <h4 class="formTitle">曲谱文件<small class="remark">支持.pdf格式</small></h4>
+    </div>
+    <div class="scoreUploadArea">
+      <div class="scoreUploadBtn"><img class="addIcon" src="../public/images/addIcon.png" alt="">
+        <p class="addText">点击添加文件或拖拽文件上传</p>
+      </div>
+    </div>
+    <div class="scoreChoice">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+        <label class="form-check-label" for="exampleRadios1"> 五线谱：请上传每行小节数为2的A4页面，建议使用FInale或Sibelius打谱软件 </label>
+      </div>
+      <br>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2"> 简谱：请上传每行小节数为4<br>
+          的A4页面，建议使用雅乐简谱<br>
+          打谱软件 </label>
+      </div>
+    </div>
+    <label class="saveBtn" id="saveScore">保存</label>
+  </div>
+
+</div>
+</div>
+
+<div class="createArea">
+  <button type="submit" class="createLink">创建链接及密码</button>
+</div>
+
+ </form>
+
+<script type="text/javascript">
+    	let WR_Inp=document.querySelector('#WR_Inp'),
+      	  WR_Upload=document.querySelector('#WR_Upload'),
+      	  a_Inp=document.querySelector('#a_Inp'),
+      	  a_Upload=document.querySelector('#a_Upload'),
+          v1_Inp=document.querySelector('#v1_Inp'),
+          v1_Upload=document.querySelector('#v1_Upload'),
+          v2_Inp=document.querySelector('#v2_Inp'),
+          v2_Upload=document.querySelector('#v2_Upload'),
+          v3_Inp=document.querySelector('#v3_Inp'),
+          v3_Upload=document.querySelector('#v3_Upload'),
+         createLink=document.querySelector('.createLink'),
+         saveInfo = document.querySelector('#saveInfo'),
+         saveAudio = document.querySelector('#saveAudio');
+
+         WR_Inp.style.display='none';
+         a_Inp.style.display='none';
+         v1_Inp.style.display='none';
+         v2_Inp.style.display='none';
+         v3_Inp.style.display='none';
+        
+      	    // 点击按钮调出选取窗口
+
+                WR_Upload.onclick=function(){
+                	WR_Inp.click();
+                	// 手动模拟点击上传框按钮
+                }
+              
+                a_Upload.onclick=function(){
+                	a_Inp.click();
+                }
+
+                  v1_Upload.onclick=function(){
+                  v1_Inp.click();
+                }
+
+                 v2_Upload.onclick=function(){
+                  v2_Inp.click();
+                }
+
+                 v3_Upload.onclick=function(){
+                  v3_Inp.click();
+                }
+          
+          createLink.onclick=function(){
+            alert('链接:127.0.0.1:3000/search,密码:123456')
+          }
+          
+          
+          saveInfo.onclick=function(){
+          	alert('作品信息保存成功')
+          }
+
+            saveAudio.onclick=function(){
+          	alert('音频文件保存成功')
+          }
+
+    </script> 
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
