@@ -58,6 +58,7 @@
 - 用户调研
 
   - 对目标用户**合唱团指挥、合唱团团员、作曲方、音源接收方**构建师徒式访谈
+  - 详见文件夹
 
 - 需求管理
 
@@ -84,3 +85,7 @@
 ### 交互原型
 
 ![页面流程图](https://github.com/yvonnelxq/Online-Collaboration-Platform-based-on-Chorus-Model/blob/main/relatedImages/Linger/%E9%A1%B5%E9%9D%A2%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
+
+### 可用性测试
+  - 2+2+1模式，使用认知过程走查法，邀请合唱团成员对半成品进行可用性测试，观察测试者反应和操作，收集反馈意见
+  - 详见上方文件夹
